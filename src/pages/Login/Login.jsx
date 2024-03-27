@@ -16,7 +16,7 @@ const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/', {
+      const response = await fetch('http://https://backbamaf5-1.onrender.com/', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ const handleLogin = async (e) => {
       const userId = data.userid; // Extrae el userId de la respuesta del servidor
 
       // Hacer una solicitud para obtener los detalles del usuario usando el userId
-      const userResponse = await fetch(`http://localhost:3000/users/${userId}`, {
+      const userResponse = await fetch(`http://https://backbamaf5-1.onrender.com/users/${userId}`, {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',

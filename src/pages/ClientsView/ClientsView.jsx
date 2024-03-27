@@ -24,7 +24,7 @@ const ClientsView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/client/clients");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/client/clients");
         setClients(response.data);
         setFilteredClients(response.data);
       } catch (error) {
@@ -67,7 +67,7 @@ const ClientsView = () => {
     if (window.confirm(`¿Seguro que quieres eliminar al cliente ${client.cif_cliente} ${client.nombre}?`)) {
       axios
         .delete(
-          `http://localhost:3000/client/clients/${client.cif_cliente}`
+          `http://https://backbamaf5-1.onrender.com/client/clients/${client.cif_cliente}`
         )
         .then((response) => {
           const updatedClients = clients.filter(

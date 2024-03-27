@@ -33,7 +33,7 @@ function UpdateOrder() {
 
     try {
       // Realizar la solicitud de actualización a través de Axios
-      const response = await axios.put(`http://localhost:3000/order/update-order/${orderData.id_pedido}`, {
+      const response = await axios.put(`http://https://backbamaf5-1.onrender.com/order/update-order/${orderData.id_pedido}`, {
         id_pedido: idPedido,
         cif_cliente: cifCliente,
         fecha_pedido: fechaPedido.toISOString().split('T')[0], // Formatear la fecha

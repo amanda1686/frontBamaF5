@@ -63,7 +63,7 @@ const CreateDelNotes = () => {
 
     if (validateForm()) {
       try {
-        const response = await axios.post("http://localhost:3000/delivery-note/create-note", formData);
+        const response = await axios.post("http://https://backbamaf5-1.onrender.com/delivery-note/create-note", formData);
         console.log("Albarán creado con éxito:", response.data);
         generatePDF(); // Generar el PDF después de crear el albarán
         setShowModal(true); // Mostrar modal después de crear el albarán

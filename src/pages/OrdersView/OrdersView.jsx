@@ -33,7 +33,7 @@ const OrdersView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/order/orders");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/order/orders");
         setOrders(response.data);
         setFilteredOrders(response.data);
       } catch (error) {
@@ -157,7 +157,7 @@ const OrdersView = () => {
     if (orderToDelete) {
       axios
         .delete(
-          `http://localhost:3000/order/delete-order/${orderToDelete.id_pedido}`
+          `http://https://backbamaf5-1.onrender.com/order/delete-order/${orderToDelete.id_pedido}`
         )
         .then((response) => {
           const updatedOrders = orders.filter(

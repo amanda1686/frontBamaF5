@@ -52,7 +52,7 @@ const CreateOrder = () => {
     if (validateForm()) {
       try {
         // Crear pedido en el servidor
-        const response = await axios.post("http://localhost:3000/order/create-order", formData);
+        const response = await axios.post("http://https://backbamaf5-1.onrender.com/order/create-order", formData);
         setOrderResponse(response.data);
         setShowPedidoModal(true);
       } catch (error) {

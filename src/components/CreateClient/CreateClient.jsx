@@ -75,7 +75,7 @@ const CreateClientForm = () => {
 
     if (validateForm()) {
       try {
-        const response = await axios.post("http://localhost:3000/client/create-client", formData);
+        const response = await axios.post("http://https://backbamaf5-1.onrender.com/client/create-client", formData);
         console.log("Cliente creado con éxito:", response.data);
         // Puedes realizar alguna acción adicional después de crear el cliente
       } catch (error) {

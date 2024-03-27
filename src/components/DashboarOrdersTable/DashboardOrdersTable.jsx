@@ -28,7 +28,7 @@ const DashboardOrdersTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/order/orders");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/order/orders");
         // Agregar nro_factura como id único a cada fila
         const rowsWithId = response.data.map(row => ({
           ...row,

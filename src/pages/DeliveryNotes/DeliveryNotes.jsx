@@ -34,7 +34,7 @@ const DeliveryNotes = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/delivery-note/notes");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/delivery-note/notes");
         setDeliveries(response.data);
         setFilteredDeliveries(response.data);
       } catch (error) {
@@ -174,7 +174,7 @@ const DeliveryNotes = () => {
     if (deliveryToDelete) {
       axios
         .delete(
-          `http://localhost:3000/delete-note/:id/${deliveryToDelete.albaran}`
+          `http://https://backbamaf5-1.onrender.com/delete-note/:id/${deliveryToDelete.albaran}`
         )
        
         .then((response) => {

@@ -34,7 +34,7 @@ const Invoices = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/invoices-view");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/invoices-view");
         setInvoices(response.data);
         setFilteredInvoices(response.data);
       } catch (error) {

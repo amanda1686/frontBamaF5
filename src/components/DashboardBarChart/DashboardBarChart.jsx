@@ -15,7 +15,7 @@ const DashboardBarChart = ({ isDashboard = false }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/invoices-view");
+        const response = await axios.get("http://https://backbamaf5-1.onrender.com/invoices-view");
         const formattedData = response.data.map((item) => ({
             ...item,
             fecha: format(new Date(item.fecha), "MMMM"), // Formato mes completo

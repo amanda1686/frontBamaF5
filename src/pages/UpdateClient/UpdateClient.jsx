@@ -44,7 +44,7 @@ const UpdateClient = () => {
     e.preventDefault();
     console.log('Formulario enviado');
     // Llamar a la API para actualizar los datos del cliente
-    axios.put(`http://localhost:3000/update-client/${id}`, formData)
+    axios.put(`http://https://backbamaf5-1.onrender.com/update-client/${id}`, formData)
       .then(response => {
         console.log('Client data updated successfully:', response.data);
         // Redirigir a la página de detalles del cliente después de la actualización
